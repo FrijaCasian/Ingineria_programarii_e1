@@ -39,3 +39,15 @@ class Student extends Utilizator {
         return numarMatricol;
     }
 }
+
+public class Main {
+    public static void main(String[] args) {
+        Utilizator utilizator = new Student("12345", "Ion Popescu", "MATRICOL1234", 2);
+
+        System.out.println("Utilizator: " + utilizator.getNumeComplet());
+        System.out.println("Rol: " + utilizator.getRol());
+
+        boolean succes = utilizator.autentificare("12345");
+        boolean esuata = utilizator.autentificare("67890");
+    }
+}
