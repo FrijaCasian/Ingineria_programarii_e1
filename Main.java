@@ -1,3 +1,4 @@
+// clasa Utilizator
 abstract class Utilizator {
     private String idCont;
     private String numeComplet;
